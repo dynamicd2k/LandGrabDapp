@@ -1,0 +1,326 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "w3wAddress",
+				"type": "string"
+			}
+		],
+		"name": "LandCaptured",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "w3wAddress",
+				"type": "string"
+			}
+		],
+		"name": "LandClaimed",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "w3wAddress",
+				"type": "string"
+			}
+		],
+		"name": "LandReleased",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user1",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "w3wAddress1",
+				"type": "string"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user2",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "w3wAddress2",
+				"type": "string"
+			}
+		],
+		"name": "LandSwapped",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"name": "UserDeleted",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "balances",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_w3wAddress",
+				"type": "string"
+			}
+		],
+		"name": "claimLand",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "deleteUser",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_w3wAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "string[]",
+				"name": "_surroundingW3WAddresses",
+				"type": "string[]"
+			}
+		],
+		"name": "forceCapture",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_w3wAddress",
+				"type": "string"
+			}
+		],
+		"name": "getLandOwner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_w3wAddress",
+				"type": "string"
+			}
+		],
+		"name": "getLandTimestamp",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "getUserBalance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "getUserLands",
+		"outputs": [
+			{
+				"internalType": "string[]",
+				"name": "",
+				"type": "string[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_w3wAddress",
+				"type": "string"
+			}
+		],
+		"name": "isLandClaimed",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "lands",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_w3wAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "releaseLand",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_myW3WAddress",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_otherUser",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_theirW3WAddress",
+				"type": "string"
+			}
+		],
+		"name": "swapLand",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

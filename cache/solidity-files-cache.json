@@ -1,0 +1,79 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/deepaks/Documents/Landgrabapp/contracts/LandRegistry.sol": {
+      "lastModificationDate": 1746893841746,
+      "contentHash": "188bad5a34e2ba114af18c04d3e90345",
+      "sourceName": "contracts/LandRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "LandRegistry"
+      ]
+    },
+    "/Users/deepaks/Documents/Landgrabapp/contracts/UserRegistry.sol": {
+      "lastModificationDate": 1746893821214,
+      "contentHash": "aae55e26f4c6f0f72dd27b40acfb6063",
+      "sourceName": "contracts/UserRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./LandRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UserManager"
+      ]
+    }
+  }
+}

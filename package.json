@@ -1,0 +1,44 @@
+{
+  "name": "landgrabapp",
+  "version": "1.0.0",
+  "main": "LandVisualiser.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "dev": "npx hardhat node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deepak S",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@chainlink/contracts": "^1.2.0",
+    "dotenv": "^16.5.0",
+    "ethers": "^5.8.0",
+    "leaflet": "^1.9.4",
+    "react": "^19.1.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.6.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "autoprefixer": "^10.4.21",
+    "chai": "^4.5.0",
+    "ethereum-waffle": "^3.4.4",
+    "hardhat": "^2.24.0",
+    "postcss": "^8.5.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
