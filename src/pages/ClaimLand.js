@@ -47,7 +47,7 @@ function ClaimLand() {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = await provider.getSigner();
       const contract = new ethers.Contract(CONTRACT_ADDRESS, LandRegistryABI, signer);
-      const tx = await contract.claimLand("toddler.geologist.animated"); //toddler.geologist.animated //filled.count.soap
+      const tx = await contract.claimLand("filled.count.soap"); //toddler.geologist.animated //filled.count.soap
       await tx.wait();
       setMessage(`Successfully claimed: ${location}`);
     } catch (err) {
