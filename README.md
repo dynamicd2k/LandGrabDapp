@@ -30,7 +30,7 @@ User execution flow:
 
 8. Goto Settings-> Click 'Delete Account' to delete your user and all owned lands.
 
-Note: Since w3w api is not working with free API key during development, 2 example w3words ahve been used on claimLand function
+Note: Since w3w api is not working with free API key during development, 2 example w3words have been used on claimLand function
 
 src/pages/ClaimLand.js
 
