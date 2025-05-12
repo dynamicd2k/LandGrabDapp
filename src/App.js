@@ -1,6 +1,6 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import Inventory from "./pages/Inventory";
 import ClaimLand from "./pages/ClaimLand";
 import Settings from "./pages/Settings";
@@ -9,23 +9,49 @@ import RegisterUser from "./pages/RegisterUser";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-100">
-        <nav className="bg-white shadow-md p-4">
-          <div className="container mx-auto">
-            <Link to="/" className="text-lg font-semibold text-blue-600">
+      <div className="min-h-screen bg-gray-50">
+        <nav className="bg-white shadow-md">
+          <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+            <NavLink to="/" className="text-2xl font-bold text-blue-600">
               LandGrab dApp
-            </Link>
-            <div className="float-center">
-              <Link to="/registerUser" className="text-blue-600 mx-4">Register User</Link>
-            </div>
-            <div className="float-right">
-              <Link to="/claim" className="text-blue-600 mx-4">Claim Land</Link>
-              <Link to="/settings" className="text-blue-600">Settings</Link>
+            </NavLink>
+
+            <div className="flex space-x-6 items-center">
+              <NavLink
+                to="/registerUser"
+                className={({ isActive }) =>
+                  `text-md font-medium ${
+                    isActive ? "text-blue-700" : "text-blue-600 hover:text-blue-800"
+                  }`
+                }
+              >
+                Register User
+              </NavLink>
+              <NavLink
+                to="/claim"
+                className={({ isActive }) =>
+                  `text-md font-medium ${
+                    isActive ? "text-blue-700" : "text-blue-600 hover:text-blue-800"
+                  }`
+                }
+              >
+                Claim Land
+              </NavLink>
+              <NavLink
+                to="/settings"
+                className={({ isActive }) =>
+                  `text-md font-medium ${
+                    isActive ? "text-blue-700" : "text-blue-600 hover:text-blue-800"
+                  }`
+                }
+              >
+                Settings
+              </NavLink>
             </div>
           </div>
         </nav>
 
-        <main className="container mx-auto p-4">
+        <main className="container mx-auto p-6">
           <Routes>
             <Route path="/" element={<Inventory />} />
             <Route path="/claim" element={<ClaimLand />} />
